@@ -1,10 +1,10 @@
 {
   "name": "dsh-worktree-toggle",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "One-click git worktree launcher for DeepSeek Harness: flip a switch beside the composer's branch pill and the session continues in a fresh worktree, with idle worktrees cleaned up automatically.",
   "type": "module",
   "license": "MIT",
-  "author": "wzciczw",
+  "author": "wzciczw <idealwzc@gmail.com>",
   "homepage": "https://github.com/wzciczw/dsh-worktree-toggle#readme",
   "repository": {
     "type": "git",
