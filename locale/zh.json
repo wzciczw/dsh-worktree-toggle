@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "会话 Worktree 开关",
+    "description": "在输入框 Git 分支标记旁提供紧凑的 Worktree 开关：新会话开始时勾选，即在新分支的 git worktree 中继续。由本插件创建、且会话三天没有新活动的 worktree 会被自动删除以释放磁盘空间。"
+  }
+}

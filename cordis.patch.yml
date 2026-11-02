@@ -1,0 +1,12 @@
+# dsh-worktree-toggle bundle patch.
+#
+# One Host row: `host.js` mounts the `worktreeToggle` Remote service and the
+# background idle-worktree sweep. The browser half comes from `dsh.client` and
+# the `./client` export.
+#
+# The row names the subpath `dsh-worktree-toggle/host` on purpose: renaming a
+# row changes the module URL the Loader imports, so a profile reload picks up
+# fresh Host code instead of the process-cached module of the package root.
+- insert:
+    - id: worktree-toggle
+      name: 'dsh-worktree-toggle/host'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Worktree Toggle",
+    "description": "A compact Worktree switch beside the composer's Git branch pill: tick it at the start of a session to continue in a fresh git worktree. Worktrees of this plugin that see no session activity for three days are removed automatically to free disk space."
+  }
+}

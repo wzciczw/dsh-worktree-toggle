@@ -1,0 +1,71 @@
+{
+  "name": "dsh-worktree-toggle",
+  "version": "0.2.0",
+  "description": "One-click git worktree launcher for DeepSeek Harness: flip a switch beside the composer's branch pill and the session continues in a fresh worktree, with idle worktrees cleaned up automatically.",
+  "type": "module",
+  "license": "MIT",
+  "author": "wzciczw",
+  "homepage": "https://github.com/wzciczw/dsh-worktree-toggle#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzciczw/dsh-worktree-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wzciczw/dsh-worktree-toggle/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "worktree",
+    "git",
+    "branch",
+    "isolation",
+    "parallel-agents"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./host": "./host.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "host.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-typert-protocol": ">=0.2.1-rc.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots",
+        "locale",
+        "connection"
+      ]
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.2 <0.3.0"
+    }
+  }
+}
